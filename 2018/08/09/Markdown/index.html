@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Markdown," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="返回主页 [TOC] === 字符 (Character) ===斜体(Italic)粗体(Bold)粗斜体(Bold and italic)删除(strikethrough)==标记(mark)==上标(Subscript): H~2~O下标(Superscript): 29^th^=== 区块 (Block) ===3级标题 (Middle Heading)6级标题 (Smallest Hea">
+<meta name="keywords" content="Markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use Markdown">
+<meta property="og:url" content="https://niceneo.github.io/2018/08/09/Markdown/index.html">
+<meta property="og:site_name" content="自由">
+<meta property="og:description" content="返回主页 [TOC] === 字符 (Character) ===斜体(Italic)粗体(Bold)粗斜体(Bold and italic)删除(strikethrough)==标记(mark)==上标(Subscript): H~2~O下标(Superscript): 29^th^=== 区块 (Block) ===3级标题 (Middle Heading)6级标题 (Smallest Hea">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://draapho.github.io/images/avatar.gif">
+<meta property="og:image" content="https://draapho.github.io/images/avatar.gif">
+<meta property="og:updated_time" content="2018-08-09T07:54:17.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Use Markdown">
+<meta name="twitter:description" content="返回主页 [TOC] === 字符 (Character) ===斜体(Italic)粗体(Bold)粗斜体(Bold and italic)删除(strikethrough)==标记(mark)==上标(Subscript): H~2~O下标(Superscript): 29^th^=== 区块 (Block) ===3级标题 (Middle Heading)6级标题 (Smallest Hea">
+<meta name="twitter:image" content="https://draapho.github.io/images/avatar.gif">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://niceneo.github.io/2018/08/09/Markdown/"/>
+
+
+
+
+
+  <title>Use Markdown | 自由</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">自由</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://niceneo.github.io/2018/08/09/Markdown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Neo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="自由">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Use Markdown</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-09T15:54:17+08:00">
+                2018-08-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><a href="https://draapho.github.io" target="_blank" rel="noopener">返回主页</a></p>
+<p>[TOC]</p>
+<h2 id="字符-Character"><a href="#字符-Character" class="headerlink" title="=== 字符 (Character) ==="></a>=== 字符 (Character) ===</h2><h3 id="斜体-Italic"><a href="#斜体-Italic" class="headerlink" title="斜体(Italic)"></a><em>斜体(Italic)</em></h3><h3 id="粗体-Bold"><a href="#粗体-Bold" class="headerlink" title="粗体(Bold)"></a><strong>粗体(Bold)</strong></h3><h3 id="粗斜体-Bold-and-italic"><a href="#粗斜体-Bold-and-italic" class="headerlink" title="粗斜体(Bold and italic)"></a><strong><em>粗斜体(Bold and italic)</em></strong></h3><h3 id="删除-strikethrough"><a href="#删除-strikethrough" class="headerlink" title="删除(strikethrough)"></a><del>删除(strikethrough)</del></h3><h3 id="标记-mark"><a href="#标记-mark" class="headerlink" title="==标记(mark)=="></a>==标记(mark)==</h3><h3 id="上标-Subscript-H-2-O"><a href="#上标-Subscript-H-2-O" class="headerlink" title="上标(Subscript): H~2~O"></a>上标(Subscript): H~2~O</h3><h3 id="下标-Superscript-29-th"><a href="#下标-Superscript-29-th" class="headerlink" title="下标(Superscript): 29^th^"></a>下标(Superscript): 29^th^</h3><h2 id="区块-Block"><a href="#区块-Block" class="headerlink" title="=== 区块 (Block) ==="></a>=== 区块 (Block) ===</h2><h3 id="3级标题-Middle-Heading"><a href="#3级标题-Middle-Heading" class="headerlink" title="3级标题 (Middle Heading)"></a>3级标题 (Middle Heading)</h3><h6 id="6级标题-Smallest-Heading"><a href="#6级标题-Smallest-Heading" class="headerlink" title="6级标题 (Smallest Heading)"></a>6级标题 (Smallest Heading)</h6><h3 id="分割线-Cut-off-Rule-—"><a href="#分割线-Cut-off-Rule-—" class="headerlink" title="分割线 (Cut-off Rule) —"></a>分割线 (Cut-off Rule) —</h3><hr>
+<h3 id="文本引用-Quoting-Text-gt"><a href="#文本引用-Quoting-Text-gt" class="headerlink" title="文本引用 (Quoting Text) &gt;"></a>文本引用 (Quoting Text) &gt;</h3><blockquote>
+<p>这里显示的是引用内容</p>
+<blockquote>
+<p>二次引用</p>
+</blockquote>
+</blockquote>
+<h3 id="代码引用-Quoting-Text"><a href="#代码引用-Quoting-Text" class="headerlink" title="代码引用 Quoting Text"></a>代码引用 <code>Quoting Text</code></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ls -l <span class="comment"># 显示文件详细信息</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"Hello"</span>) <span class="comment">// 打印</span></span><br></pre></td></tr></table></figure>
+<h3 id="数学公式-Mathematical-formula"><a href="#数学公式-Mathematical-formula" class="headerlink" title="数学公式 (Mathematical formula) $"></a>数学公式 (Mathematical formula) $</h3><ul>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank" rel="noopener">LaTeX 数学公式语法介绍</a></li>
+<li>质能方程很简洁: $E = mc^2$</li>
+<li>数学公式块使用 $$<br>  $$  x = a_0 + \cfrac{1}{a_1+ \cfrac{1}{a_2 } } $$</li>
+<li><strong>Typora支持此格式, Hexo需要安装插件</strong></li>
+</ul>
+<h2 id="表格和列表-Table-amp-List"><a href="#表格和列表-Table-amp-List" class="headerlink" title="=== 表格和列表 (Table &amp; List) ==="></a>=== 表格和列表 (Table &amp; List) ===</h2><h3 id="列表-List"><a href="#列表-List" class="headerlink" title="列表 (List) -"></a>列表 (List) -</h3><ul>
+<li>George Washington</li>
+<li>John Adams</li>
+<li>Thomas Jefferson</li>
+</ul>
+<h3 id="任务表-Task-lists-x"><a href="#任务表-Task-lists-x" class="headerlink" title="任务表 (Task lists) -[x]"></a>任务表 (Task lists) -[x]</h3><ul>
+<li style="list-style: none"><input type="checkbox"> a bigger project</li>
+<li style="list-style: none"><input type="checkbox" checked> first subtask</li>
+<li style="list-style: none"><input type="checkbox" checked> follow up subtask</li>
+</ul>
+<h3 id="复合列表-Combined-lists"><a href="#复合列表-Combined-lists" class="headerlink" title="复合列表 (Combined lists)"></a>复合列表 (Combined lists)</h3><ol>
+<li>Make my changes<ol>
+<li>Fix bug</li>
+<li>Improve formatting<ul>
+<li>Make the headings bigger</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Push my commits to GitHub</li>
+<li>Open a pull request<ul>
+<li>Describe my changes</li>
+<li>Mention all the members of my team<ul>
+<li style="list-style: none"><input type="checkbox"> Ask for feedback</li>
+<li style="list-style: none"><input type="checkbox" checked> No, Thanks</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="表格-Table"><a href="#表格-Table" class="headerlink" title="表格 (Table) -|-"></a>表格 (Table) -|-</h3><table>
+<thead>
+<tr>
+<th>Default</th>
+<th style="text-align:center">Center Aligned</th>
+<th style="text-align:right">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">some wordy text</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+</tbody>
+</table>
+<h2 id="链接-Link"><a href="#链接-Link" class="headerlink" title="=== 链接 (Link) ==="></a>=== 链接 (Link) ===</h2><h3 id="网站链接"><a href="#网站链接" class="headerlink" title="网站链接 "></a>网站链接 <a href=""></a></h3><p>内联式: <a href="https://draapho.github.io/" target="_blank" rel="noopener">我的博客</a></p>
+<p>引用式: <a href="https://draapho.github.io" target="_blank" rel="noopener">我的博客</a></p>
+<h3 id="图片链接"><a href="#图片链接" class="headerlink" title="图片链接 "></a>图片链接 <img src="" alt=""></h3><p>内联式: <img src="https://draapho.github.io/images/avatar.gif" alt="头像"> </p>
+<p>引用式: <img src="https://draapho.github.io/images/avatar.gif" alt="头像"></p>
+<h3 id="链接-lt-gt"><a href="#链接-lt-gt" class="headerlink" title="链接 &lt;&gt;"></a>链接 &lt;&gt;</h3><p>博客地址: <a href="https://draapho.github.io/" target="_blank" rel="noopener">https://draapho.github.io/</a></p>
+<h3 id="图标-Emoji"><a href="#图标-Emoji" class="headerlink" title="图标 :Emoji:"></a>图标 :Emoji:</h3><p>:panda_face:  :sparkles:  :camel:  :boom:  :pig:<br><a href="http://www.emoji-cheat-sheet.com/" target="_blank" rel="noopener">emoji cheat sheet</a> </p>
+<h3 id="脚注-Footnote"><a href="#脚注-Footnote" class="headerlink" title="脚注 ^Footnote"></a>脚注 <a href="这里是脚注">^Footnote</a></h3><h2 id="图表-Diagram"><a href="#图表-Diagram" class="headerlink" title="=== 图表 (Diagram) ==="></a>=== 图表 (Diagram) ===</h2><ul>
+<li><a href="http://knsv.github.io/mermaid/" target="_blank" rel="noopener">mermaid介绍</a></li>
+<li><strong><em>Typora支持此格式, Hexo需要安装插件</em></strong></li>
+</ul>
+<h3 id="流程图-Flowchart"><a href="#流程图-Flowchart" class="headerlink" title="流程图 (Flowchart)"></a>流程图 (Flowchart)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    A[Christmas] --&gt;|Get money| B(Go shopping)</span><br><span class="line">    B --&gt; C&#123;Let me think&#125;</span><br><span class="line">    C --&gt;|One| D[Laptop]</span><br><span class="line">    C --&gt;|Two| E[iPhone]</span><br><span class="line">    C --&gt;|Three| F[Car]</span><br></pre></td></tr></table></figure>
+<h3 id="序列图-Sequence-diagram"><a href="#序列图-Sequence-diagram" class="headerlink" title="序列图  (Sequence diagram)"></a>序列图  (Sequence diagram)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">    loop every day</span><br><span class="line">        Alice-&gt;&gt;John: Hello John, how are you?</span><br><span class="line">        John--&gt;&gt;Alice: Great!</span><br><span class="line">    end</span><br></pre></td></tr></table></figure>
+<h3 id="甘特图-Gantt-diagram"><a href="#甘特图-Gantt-diagram" class="headerlink" title="甘特图 (Gantt diagram)"></a>甘特图 (Gantt diagram)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">    dateFormat  YYYY-MM-DD</span><br><span class="line">    title Adding GANTT diagram functionality to mermaid</span><br><span class="line"></span><br><span class="line">    section A section</span><br><span class="line">    Completed task            :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">    Active task               :active,  des2, 2014-01-09, 3d</span><br><span class="line">    Future task               :         des3, after des2, 5d</span><br><span class="line">    Future task2               :         des4, after des3, 5d</span><br><span class="line"></span><br><span class="line">    section Critical tasks</span><br><span class="line">    Completed task in the critical line :crit, done, 2014-01-06,24h</span><br><span class="line">    Implement parser and jison          :crit, done, after des1, 2d</span><br><span class="line">    Create tests for parser             :crit, active, 3d</span><br><span class="line">    Future task in critical line        :crit, 5d</span><br><span class="line">    Create tests for renderer           :2d</span><br><span class="line">    Add to mermaid                      :1d</span><br><span class="line"></span><br><span class="line">    section Documentation</span><br><span class="line">    Describe gantt syntax               :active, a1, after des1, 3d</span><br><span class="line">    Add gantt diagram to demo page      :after a1  , 20h</span><br><span class="line">    Add another diagram to demo page    :doc1, after a1  , 48h</span><br><span class="line"></span><br><span class="line">    section Last section</span><br><span class="line">    Describe gantt syntax               :after doc1, 3d</span><br><span class="line">    Add gantt diagram to demo page      : 20h</span><br><span class="line">    Add another diagram to demo page    : 48h</span><br></pre></td></tr></table></figure>
+<h3 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h3><ul>
+<li>以下字符需要使用跳脱字符<code>\</code>来显示</li>
+</ul>
+<p>\ ` * _ { } [ ] ( ) # + - . !</p>
+<ul>
+<li>显示空格</li>
+</ul>
+<p>这一行没有空格</p>
+<p>&ensp;这是半字空格, 使用<code>&amp;ensp;</code></p>
+<p>&emsp;这是全字空格, 使用<code>&amp;emsp;</code></p>
+<p><a href="https://draapho.github.io" target="_blank" rel="noopener">返回主页</a></p>
+<p><a href="http://mdp.tylingsoft.com/" target="_blank" rel="noopener">Markdown-plus</a></p>
+<p><a href="https://github.com/tylingsoft/markdown-plus" target="_blank" rel="noopener">Markdown-plus Source</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/09/linux-Performance/" rel="next" title="Linux Performance">
+                <i class="fa fa-chevron-left"></i> Linux Performance
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Neo" />
+            
+              <p class="site-author-name" itemprop="name">Neo</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符-Character"><span class="nav-number">1.</span> <span class="nav-text">=== 字符 (Character) ===</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#斜体-Italic"><span class="nav-number">1.1.</span> <span class="nav-text">斜体(Italic)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#粗体-Bold"><span class="nav-number">1.2.</span> <span class="nav-text">粗体(Bold)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#粗斜体-Bold-and-italic"><span class="nav-number">1.3.</span> <span class="nav-text">粗斜体(Bold and italic)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除-strikethrough"><span class="nav-number">1.4.</span> <span class="nav-text">删除(strikethrough)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标记-mark"><span class="nav-number">1.5.</span> <span class="nav-text">==标记(mark)==</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上标-Subscript-H-2-O"><span class="nav-number">1.6.</span> <span class="nav-text">上标(Subscript): H~2~O</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下标-Superscript-29-th"><span class="nav-number">1.7.</span> <span class="nav-text">下标(Superscript): 29^th^</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区块-Block"><span class="nav-number">2.</span> <span class="nav-text">=== 区块 (Block) ===</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3级标题-Middle-Heading"><span class="nav-number">2.1.</span> <span class="nav-text">3级标题 (Middle Heading)</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#6级标题-Smallest-Heading"><span class="nav-number">2.1.0.0.1.</span> <span class="nav-text">6级标题 (Smallest Heading)</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割线-Cut-off-Rule-—"><span class="nav-number">2.2.</span> <span class="nav-text">分割线 (Cut-off Rule) —</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本引用-Quoting-Text-gt"><span class="nav-number">2.3.</span> <span class="nav-text">文本引用 (Quoting Text) &gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码引用-Quoting-Text"><span class="nav-number">2.4.</span> <span class="nav-text">代码引用 Quoting Text</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数学公式-Mathematical-formula"><span class="nav-number">2.5.</span> <span class="nav-text">数学公式 (Mathematical formula) $</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格和列表-Table-amp-List"><span class="nav-number">3.</span> <span class="nav-text">=== 表格和列表 (Table &amp; List) ===</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表-List"><span class="nav-number">3.1.</span> <span class="nav-text">列表 (List) -</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#任务表-Task-lists-x"><span class="nav-number">3.2.</span> <span class="nav-text">任务表 (Task lists) -[x]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复合列表-Combined-lists"><span class="nav-number">3.3.</span> <span class="nav-text">复合列表 (Combined lists)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格-Table"><span class="nav-number">3.4.</span> <span class="nav-text">表格 (Table) -|-</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接-Link"><span class="nav-number">4.</span> <span class="nav-text">=== 链接 (Link) ===</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网站链接"><span class="nav-number">4.1.</span> <span class="nav-text">网站链接 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片链接"><span class="nav-number">4.2.</span> <span class="nav-text">图片链接 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接-lt-gt"><span class="nav-number">4.3.</span> <span class="nav-text">链接 &lt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图标-Emoji"><span class="nav-number">4.4.</span> <span class="nav-text">图标 :Emoji:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脚注-Footnote"><span class="nav-number">4.5.</span> <span class="nav-text">脚注 ^Footnote</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图表-Diagram"><span class="nav-number">5.</span> <span class="nav-text">=== 图表 (Diagram) ===</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#流程图-Flowchart"><span class="nav-number">5.1.</span> <span class="nav-text">流程图 (Flowchart)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#序列图-Sequence-diagram"><span class="nav-number">5.2.</span> <span class="nav-text">序列图  (Sequence diagram)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#甘特图-Gantt-diagram"><span class="nav-number">5.3.</span> <span class="nav-text">甘特图 (Gantt diagram)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊字符"><span class="nav-number">5.4.</span> <span class="nav-text">特殊字符</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Neo</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
